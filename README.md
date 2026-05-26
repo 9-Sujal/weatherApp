@@ -4,6 +4,8 @@ A modern and responsive Weather Application built using **React**, **OpenWeather
 This application allows users to search for any city worldwide and get real-time weather information with a clean and user-friendly interface.
 
 ---
+## Live link
+Click [here](https://weather-app-lac-eight-11.vercel.app/) to visit the site.
 
 # 🚀 Features
 
