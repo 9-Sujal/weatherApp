@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Weather Application built using **React**, **OpenWeather API**, **TanStack Query**, and **Tailwind CSS**.  
+This application allows users to search for any city worldwide and get real-time weather information with a clean and user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Features
 
-## React Compiler
+- 🌍 Search weather by city name
+- 🌡️ Real-time temperature updates
+- 💨 Wind speed information
+- 💧 Humidity details
+- ☁️ Weather condition display
+- ⚡ Fast API data fetching
+- 🧠 Smart caching using TanStack Query
+- 📱 Fully responsive UI
+- 🎨 Beautiful modern design using Tailwind CSS
+- ❌ Error handling for invalid cities
+- ⏳ Loading states for better UX
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Frontend
+- React
+- Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## State & Data Fetching
+- TanStack Query (React Query)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## API
+- OpenWeather API
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Build Tool
+- Vite
+
+---
+
+# Clone the repository
+
+```bash
+git clone https://github.com/9-Sujal/weatherApp.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Navigate to Project Folder
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd weatherApp
 ```
+
+# Conclusion
+
+### The Weather App is a modern frontend application designed to provide real-time weather information using advanced web technologies. By combining React, Tailwind CSS, TanStack Query, and the OpenWeather API, the project demonstrates efficient frontend architecture, clean UI development, optimized performance, and scalable design principles.
+
+### The project not only delivers useful functionality but also serves as a strong learning experience for understanding real-world frontend development practices. Features like caching, responsive layouts, reusable components, asynchronous API handling, and secure environment management make the application production-ready and maintainable.
+
+### This Weather App reflects modern web development standards and provides a solid foundation for adding more advanced weather analytics and interactive features in the future.
