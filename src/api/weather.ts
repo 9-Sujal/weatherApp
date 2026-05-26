@@ -34,13 +34,13 @@ class WeatherAPI{
     return this.fetchData<ForecastData>(url);
     }
 // http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
-    async reverseGeocode({lat,lon}: Coordinates): Promise<{name: string; country: string}[]>{
+    async reverseGeocode({lat,lon}: Coordinates): Promise<GeocodingResponse[]>{
         const url = this.createUrl(`${API_CONFIG.GEO}/reverse`,{
             lat: lat.toString(),
             lon: lon.toString(),
             limit: 10,
         });
-        return this.fetchData<{name: string; country: string}[]>(url);
+        return this.fetchData<GeocodingResponse[]>(url);
     }
 
     async searchLocations(query:string):Promise<GeocodingResponse[]>{
